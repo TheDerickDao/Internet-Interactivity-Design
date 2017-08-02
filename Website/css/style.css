@@ -1,0 +1,241 @@
+html {											/* Resolution */
+	margin: 0;
+	position: relative;
+	min-width: 1366px;
+	min-height: auto;
+}
+
+@font-face{										/* First Font */
+	font-family: earth;
+	src: url(../fonts/Earth-Normal.ttf);
+}
+
+@font-face{										/* Second Font */
+	font-family: ubuntu-l;
+	src: url(../fonts/Ubuntu-L.ttf);
+}
+
+body{			
+	background: -webkit-linear-gradient(#e3e4de, #FFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e3e4de, #FFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e3e4de, #FFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e3e4de, #FFF); /* Standard syntax */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.logo{											/* Adjusts the length of the logo banner at the top above the navigation to be shorter in width */
+	margin-left: 42%;
+	}
+
+#navigation{						/* Navigation default colours and stuff */
+	background: transparent;
+	list-style: none;
+	margin-left: 5%;
+	width: 94%;
+	position: relative;
+	display: inline-table;
+	margin-right: 5%;
+	bottom: 15px;
+	}
+
+#navigation:after {									/* Display after hover over */
+		content: ""; clear: both; display: block;
+	}
+	
+nav ul{									/* Navigation Bar */
+	height: 40px;
+	margin: 0px;
+	display: inline;
+	list-style-type: none;
+	position: relative;
+	padding: 0;
+	}
+
+
+li{							/* Navigation Bar aligning */
+	float: right;
+	margin-right: 0;
+	padding-left: 2%;
+	position: relative;
+	min-width: 14%;
+	}
+	
+li:first-child{				/* Navigation Bar aligning */
+	padding-left: 0;
+	}
+
+li:last-child{			/* Navigation Bar aligning */
+	padding: 0;
+	color: #d00a0a;
+	}
+
+	
+nav a{							/* How the navigation bar looks */
+	margin: 0;
+	color: #000000;
+	display: block;
+	font-size: 1.2em;
+	font-family: 'earth';
+	font-weight: bold;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+	}
+
+nav a:hover, nav a:active, 
+nav .active a:link, nav .active a:visited{					/* Navigation Transitions */
+	color: #c7c3b8;
+	}
+	
+nav ul li{											/* Ordering of each navigation in order */
+	float: left;
+	}
+	
+#navigation ul ul li:hover, #navigation ul ul li a:hover		/* Second level of navigation (drop-down) */
+{
+	position: relative;
+	color: #c7c3b8;
+	background-color: #FFF;
+}
+
+#navigation ul ul						/* container of drop down menu */
+{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 20%;
+	padding: 0;
+}
+
+#navigation ul ul li			/* list elements in drop down menu */
+{
+	float:none;
+	width:200px;
+	color: #c7c3b8;
+	background-color: #c7c3b8;
+	padding: 0;
+}
+
+#navigation ul ul li a			/* anchor tags in li elements of the drop down menu */
+{
+	line-height:120%;
+	padding:10px 15px;
+	color: #000000;
+	font-family: 'ubuntu-l';
+}
+
+#navigation ul li:hover > ul			/* hover for drop down menu */
+{
+	display:block;
+}
+
+ul{										/* allows for each li element in drop down menu to have no bullet points */
+	list-style: none;
+}
+
+.copyright {										/* Copyright footer at the bottom */
+	text-align: center;
+	line-height: 1.5em;
+	margin: 3%;
+}
+
+.image-popup-vertical-fit{					/* Single Image Pop-up */
+	margin-left: 20%;
+}
+
+table{									/* Table for albums on TOP page*/
+	margin: 3%;
+	text-align: center;
+	font-family: 'ubuntu-l';
+	border: 1px;
+	width: 57%;
+	margin-left: 23%;
+}
+
+table li{							/* content in tables made as a list (i.e. list of songs) */
+	float: left;
+	padding-left: 0;
+}
+
+.songs{								/* songs container that holds information */
+	column-count: 1;
+	display: inline-block;
+	width: 29%;
+	text-align: left;
+}
+
+.songsgd{						/* song container on the G-Dragon page */
+	margin-left: 21.5%;
+}
+
+.albums{									/* width of album container on Albums page */
+	width: 90%;
+}
+
+.tableheader {									/* top bar of the table for TOP Page */
+	background-color: #000000;
+	color: #FFF;	
+	font-family: 'ubuntu-l';
+}
+
+.tablecontent{									/* font for the tables */
+	font-family: 'ubuntu-l';
+}
+
+.header1{									/* Title of the Page on the given page */
+	margin-left: 5%;
+	margin-right: 3%;
+	font-size: 3em;
+	font-family: 'earth';
+	}
+
+.header2, .header3{						/* header for the pages */
+	margin-left: 5%;
+	margin-right: 3%;
+	font-size: 2em;
+	font-family: 'earth';
+}
+	
+.bodytext1, .bodytext2, .bodytext3, .bodytext4{			/* Home Page body text */
+	margin-left: 3%;
+	margin-right: 3%;
+	text-align: left;
+	font-family: 'ubuntu-l';
+	}
+
+.top1, .top3, .gd1, .taeyang1, .daesung1, .seungri1{								/* Picture on Home Page */
+	float: left;
+	margin-left: 3%;
+	margin-right: 30px;
+	margin-top: 3%;
+}
+
+.top4, .gd2{								/* pictures for T.O.P. and G-Dragon page */
+	float: right;
+	margin-right: 3%;
+}
+
+#panel{											/* Panel of faces on the index page */
+	margin-top: 5%;
+	margin-left: 34%;
+}
+
+.daesung, .seungri, .top, .gd, .taeyang{				/* button effects */
+	opacity: 0.4;
+	filter: grayscale(100%);
+}
+
+.daesung:hover, .seungri:hover, .top:hover, .gd:hover, .taeyang:hover{		/* rollover button effects */
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+header { 									/* article title for each page */
+      text-align: center;
+      }

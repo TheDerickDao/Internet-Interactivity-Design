@@ -1,0 +1,181 @@
+html {											/* Resolution */
+	margin: 0;
+	position: relative;
+	min-width: 1366px;
+	min-height: auto;
+}
+
+@font-face{										/* First Font */
+	font-family: earth;
+	src: url(../fonts/Earth-Normal.ttf);
+}
+
+@font-face{										/* Second Font */
+	font-family: ubuntu-l;
+	src: url(../fonts/Ubuntu-L.ttf);
+}
+
+body{											/* background colour for the index page */
+	background-color: #e3e4de;
+}
+
+.bbhome{								/* text of the band name on the index page */
+	text-decoration: none;
+	color: #000000;
+}
+
+#panel{											/* Panel of faces on the index page */
+	margin-top: 10%;
+	margin-left: 34%;
+}
+
+#navigation{						/* Navigation default colours and stuff */
+	background: transparent;
+	list-style: none;
+	margin-left: 5%;
+	width: 90%;
+	position: relative;
+	display: inline-table;
+	margin-right: 5%;
+	bottom: 15px;
+	}
+	
+#navigationindex{						/* Navigation default colours and stuff */
+	background: transparent;
+	list-style: none;
+	margin-left: 37%;
+	width: 90%;
+	position: relative;
+	display: inline-table;
+	margin-right: 5%;
+	bottom: 15px;
+	padding-top: 2%;
+	}
+	
+#navigationindex2{						/* Navigation default colours and stuff */
+	background: transparent;
+	list-style: none;
+	margin-left: 30%;
+	width: 90%;
+	position: relative;
+	display: inline-table;
+	margin-right: 5%;
+	bottom: 15px;
+	padding-top: 2%;
+	}
+
+#navigation:after, #navigationindex:after, #navigationindex2 {				/* what happens after a rollover */
+		content: ""; clear: both; display: block;
+	}
+	
+nav ul{									/* Navigation Bar */
+	height: 40px;
+	margin: 0px;
+	display: inline;
+	list-style-type: none;
+	position: relative;
+	padding: 0;
+	}
+
+
+li{							/* Navigation Bar aligning */
+	float: right;
+	margin-right: 0;
+	padding-left: 2%;
+	position: relative;
+	min-width: 14%;
+	}
+	
+li:first-child{				/* Navigation Bar aligning */
+	padding-left: 0;
+	}
+
+li:last-child{			/* Navigation Bar aligning */
+	padding: 0;
+	color: #d00a0a;
+	}
+
+	
+nav a{							/* How the navigation bar looks */
+	margin: 0;
+	color: #000000;
+	display: block;
+	font-size: 1.2em;
+	font-family: 'earth';
+	font-weight: bold;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+	}
+
+nav a:hover, nav a:active, 
+nav .active a:link, nav .active a:visited{					/* Navigation Transitions */
+	color: #c7c3b8;
+	}
+	
+nav ul li{											/* Ordering of each navigation in order */
+	float: left;
+	}
+	
+#navigation ul li:hover, #navigation ul ul li a:hover /* drop down menu */
+{
+	position: relative;
+	color: #c7c3b8;
+}
+
+#navigation ul ul					/* second level of the drop down menu */
+{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 20%;
+	background: transparent;
+	padding: 0;
+}
+
+#navigation ul ul li				/* list elements in drop down menu */
+{
+	float:none;
+	width:200px;
+	color: #000000;
+}
+
+#navigation ul ul li a					/* anchor trags in the drop down menu */
+{
+	line-height:120%;
+	padding:10px 15px;
+	color: #000000;
+	font-family: 'ubuntu-l';
+}
+
+#navigation ul li:hover > ul				/* rollover for drop down menu */
+{
+	display:block;
+}
+
+.bigbangname{ 									/* Big Bang's name on the home page */
+	font-family: 'earth';
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.copyright {										/* Copyright footer at the bottom */
+	text-align: center;
+	line-height: 1.5em;
+	margin: 3%;
+}
+
+.daesung, .seungri, .top, .gd, .taeyang{				/* button effects */
+	opacity: 0.4;
+	filter: grayscale(100%);
+}
+
+.daesung:hover, .seungri:hover, .top:hover, .gd:hover, .taeyang:hover{		/* rollover button effects */
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
